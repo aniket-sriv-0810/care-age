@@ -1,0 +1,220 @@
+body{
+    overflow-x: hidden;
+}
+
+#slider{
+    height: 80rem;
+    border:1px solid black;
+    border-radius: 4rem;
+    width: 90%;
+    margin:auto;
+    box-shadow: 7px 7px 7px grey;
+    margin-top: 10rem;
+    margin-bottom: 60rem;
+}
+#slide-img-01{
+    position: relative;
+    top:-20rem;
+    width: max-content;
+}
+.slide-head{
+    font-size: 6rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 15rem;
+    width: max-content;
+    margin-left: 20rem;
+    text-shadow: 2px 2px 3px grey;
+    margin-bottom: 12rem;
+    position: relative;
+    left:30rem;
+    }
+.bg-slide{
+    position: relative;
+    width:25rem;
+    height:25rem;
+    left:110rem;
+    top:-2rem;
+    background-color: rgba(7, 216, 70, 0.696);
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px black;;
+}
+.slide-man{
+    width:20rem;
+    position: relative;
+    top:2rem;
+    left:3rem;
+    filter:drop-shadow(4px 4px 4px black);
+    animation:old 2s ease-in-out .5s infinite alternate;
+}
+@keyframes old {
+    0%{
+        transform: translate(-3px);
+
+    }
+    25%{
+        transform: translate(0px);
+     
+    }
+    50%{
+        transform: translate(7px);
+    }
+    75%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(-5px);
+
+    }
+}
+.para-slide{
+    position: relative;
+    left:15rem;
+    width:60%;
+    margin-top: -30rem;
+    margin-bottom: 10rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color:rgb(84, 84, 84);
+}
+#slider-btn{
+    width:20rem;
+}
+/* responsive nature */
+/* for mobile */
+/* small phones */
+@media (min-width : 250px) and (max-width : 330px){
+    .slide-head{
+        margin-top: 20rem; 
+        margin-left: 0rem;
+        margin-bottom: 25rem;
+        left:5rem;
+        font-size: 5rem;
+    }
+    .bg-slide{
+        left:3rem;
+        top:-15rem;
+    }
+    .para-slide{
+        width:80%;  
+        margin-top: 0rem;
+        left: 3rem;
+        margin-bottom: 10rem;
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+    #slider{
+        height: 21rem;
+    }
+    #slide-img-01{
+        top:-4rem;
+        width: 100%;
+    }
+}
+
+/* medium phones */
+@media (min-width: 330px) and (max-width: 380px) {
+    .slide-head{
+        margin-top: 20rem; 
+        margin-bottom: 25rem;
+        margin-left: 0;
+        left:4rem;
+    }
+    .bg-slide{
+        left:6rem;
+        top:-15rem;
+    }
+    .para-slide{
+        width:80%;  
+        margin-top: 0rem;
+       left:3rem;
+        margin-bottom: 10rem;
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+    #slider{
+        height: 21rem;
+    }
+    #slide-img-01{
+        top:-4rem;
+        width: 100%;
+    }
+}
+
+
+/*  large phones   */
+@media (min-width: 380px) and (max-width: 450px) {
+    .slide-head{
+        margin-top: 20rem; 
+        margin-left: 0rem;
+        margin-bottom: 25rem;
+        left:7rem;
+    }
+    .bg-slide{
+        left:8rem;
+        top:-15rem;
+    }
+    .para-slide{
+        width:80%;  
+        margin-top: 0rem;
+        left: 4rem;
+        margin-bottom: 10rem;
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+    #slider{
+        height: 22rem;
+    }
+    #slide-img-01{
+        top:-5rem;
+        width: 100%;
+    }
+}
+
+/* medium & tablets & ipads  and landscape mode of phones*/
+@media (min-width: 451px) and (max-width: 1023px){
+    .slide-head{
+        margin-top: 20rem; 
+        margin-left: 24rem;
+        margin-bottom: 30rem;
+        left:6rem;
+    }
+    .bg-slide{
+        left:30rem;
+        top:-20rem;
+    }
+    .para-slide{
+        width:90%;  
+        margin-top: -3rem;
+        margin-left: 4rem;
+        margin-bottom: 20rem;
+        font-size: 2rem;
+        text-align: justify;
+    }
+    #slider{
+        height: 45rem;
+    }
+    #slide-img-01{
+        top:-11rem;
+        width: 100%;
+    }
+}
+
+
+/* laptops  and tablets landscapes*/
+@media (min-width: 1024px) and (max-width: 1450px){
+
+    .bg-slide{
+        left:96rem;
+    }
+    #slider{
+        height: 70rem;;
+    }
+    .slide-head{
+        margin-left: 5rem;
+    }
+    .para-slide{
+        left:10rem;
+    }
+}

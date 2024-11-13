@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Book Appointment</title>
+    <link rel="website icon" href="/bg/main-logo.png" type="jpeg/png/jpg">
+    <link rel="stylesheet" href="/styles/booking.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+</style>
+      </style>
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Book Appointment</div>
+    <div class="content">
+      <form action="./home.html" method="post" name="google-sheet" autocomplete="off">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name"  name="name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Problem</span>
+            <input type="text" placeholder="Enter your problem" name="problem" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" name="email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Mobile Number</span>
+            <input type="text" placeholder="Enter mobile number" name="mobile" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Address</span>
+            <input type="text" placeholder="Enter your address" name="address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Birth</span>
+            <input type="date" placeholder="Enter your date of birth" name="dob" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Age</span>
+            <input type="number" placeholder="Enter your age" name="age" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date of Registration</span>
+            <input type="date" placeholder="Enter your date of birth" name="registration" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1" value="male">
+          <input type="radio" name="gender" id="dot-2" value="female">
+          <input type="radio" name="gender" id="dot-3" value="others">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Book Appointment">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxlIV5wZMHXpFkVYA50uk7Mb5MswCnNYeKX8MjWo5G8txo8VjXzFdxWI4ZfSv0HQB0/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert('Thank you ! Your Appointment will be Booked Soon', response),
+        window.open('home.html')
+        )
+
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>

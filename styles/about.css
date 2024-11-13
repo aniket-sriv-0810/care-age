@@ -1,0 +1,323 @@
+
+body{
+    overflow-x: hidden;
+}
+#about-id{
+    overflow-x: hidden;
+    padding: 10rem;;
+}
+.about{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    width: 100%;
+}
+.about-head,.title,.slogan,.moto{
+    font-size: 10rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    width:max-content;
+}
+.about-head{
+    position: relative;
+    top:-10rem;
+    left:30rem;
+    text-shadow: 3px 3px 3px grey;
+}
+#about-img{
+    width:25rem;
+    position: relative;
+    top:-35rem;
+    left:10rem;
+    filter:drop-shadow(2px 2px 2px  rgb(1, 88, 1)); 
+}
+.title,.slogan{
+    font-size: 4.5rem;
+    text-align: left;
+    position: relative;
+    top:-52rem;
+    left:41rem;
+    text-shadow: 1px 1px 1px grey;
+}
+.title{
+    margin-left: 10rem;;
+}
+.slogan ,.moto{
+font-size: 2rem;
+text-transform: capitalize;
+text-align:justify; 
+margin-left: 5rem;
+margin-top: 2rem;
+}
+.moto{
+    font-size: 1.7rem;
+    font-style: italic;
+font-weight: 200;
+width: 90%;
+display:inline-block !important;
+position: relative;
+top:-45rem;
+right: -3rem;
+text-transform: lowercase;
+margin-top: 6rem;
+color:rgb(62, 62, 62);
+/* margin-left: -5rem; */
+margin-bottom: 10rem;
+}
+.about-div{
+position: relative;
+width:40rem;
+height:30rem;
+left:95rem;
+top:-10rem;
+background-color: rgba(165, 193, 190, 0.623);
+border-radius: 50%;
+box-shadow: 4px 4px 4px black;;
+}
+.about-us-pic{
+    position: relative;
+    top:0;
+    left:1rem;
+    filter: drop-shadow(3px 3px 3px black);
+    animation:about 2s ease-in-out .5s infinite alternate;
+}
+@keyframes about {
+    0%{
+        transform: translateY(-5px);
+    }
+    25%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    75%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+
+/* responsive nature */
+/* for mobile */
+/* small phones */
+@media (min-width : 250px) and (max-width : 330px){
+    .about-head{
+        font-size: 3rem;
+        top:-10rem;
+        left:-5rem;
+    }
+    .about-div{
+        width:22rem;
+        height:17rem;
+        left:-6rem;
+        top:-4rem;
+    }
+   #about-img{
+    width:25rem;
+    position: relative;
+    top:2rem;
+    left:1rem;
+    filter:drop-shadow(2px 2px 2px rgb(1,88,1))
+   }
+    .title,.slogan{
+        font-size: 2.3rem;
+        text-align: left;
+        top:14rem;
+        left:-9rem;
+    }
+    .slogan ,.moto{
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        left:-8rem !important;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .moto{
+        font-size: 1.2rem;
+width: 28rem;
+height: 20rem;
+    top:-45rem;
+    left:-8rem !important ;
+    margin-top: 63rem;
+    margin-left: 0rem;
+    margin-bottom: 30rem;
+    }
+}
+
+/* medium phones   */
+@media (min-width: 330px) and (max-width: 380px) {
+    /* .about{
+        overflow-x: scroll;
+    } */
+    .about-head{
+        font-size: 3.4rem;
+        top:-1rem;
+        left:-5rem;
+    }
+    .about-div{
+        width:25rem;
+        height:19rem;
+        left:-5rem;
+        top:10rem;
+    }
+    .bg-about{
+        margin-top: 15rem;
+        width:20rem;
+        height: 20rem;;
+        /* background-color: blueviolet; */
+        position: relative;
+        top:7rem;
+        left:-21rem;
+        display: none;
+    }
+    #about-img{
+        width:18rem;
+        position: relative;
+        top:20rem;
+        left:0rem;
+    }
+    .title,.slogan{
+        font-size: 2.5rem;
+        text-align: left;
+        top:26rem;
+    }
+    .title,.slogan{
+        left:-7rem;
+    }
+    .title{
+        margin-left:9rem;
+    }
+    .slogan ,.moto{
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        margin-left: 0rem;
+        margin-top: 2rem;
+    }
+    .moto{
+        font-size: 1.3rem;
+width: 30rem;
+height: 20rem;
+    top:-40rem;
+    right:-13rem;
+    margin-top: 69rem;
+    left: -7rem;
+    margin-bottom: 30rem;
+    }
+}
+
+
+/* large phones */
+@media (min-width: 380px) and (max-width: 450px) {
+    .about-head{
+        font-size: 4.7rem;
+        top:-10rem;
+        left:-6rem;
+    }
+    .about-div{
+        width:32rem;
+        height:24rem;
+        left:-6rem;
+        top:3rem;
+    }
+    #about-img{
+        display: none;
+    }
+    .bg-about{
+        margin-top: 10rem;
+        width:27rem;
+        height: 27rem;;
+        /* background-color: blueviolet; */
+        position: relative;
+        top:7rem;
+        left:-3rem;
+        display: block !important;
+    }
+    .title,.slogan{
+        font-size: 3rem;
+        text-align: left;
+        top:15rem;
+        left:-6rem;
+    }
+    .slogan ,.moto{
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin-left: -1rem;
+        margin-top: 2rem;
+    }
+    .moto{
+        font-size: 1.2rem;
+width: 34rem;
+height: 20rem;
+    top:-45rem;
+    right:7rem;
+    margin-top: 63rem;
+    margin-left: 0rem;
+    margin-bottom: 30rem;
+    }
+}
+
+/* medium & tablets & ipads  and landscape mode of phones*/
+@media (min-width: 451px) and (max-width: 1023px){
+    .about{
+        margin-top: 80rem;
+    }
+    .about-head{
+        left:-22rem;
+        top:-15rem;
+    }
+    #about-img{
+        left:-27rem;
+        top:-34rem;
+    }
+    .title,.slogan{
+        left:0rem;
+    }
+    .about-div{
+        left:60rem;
+        width:35rem;
+    }
+    .moto{
+        font-size: 1.8rem;
+width: 70rem;
+height: 20rem;
+    top:-107rem;
+    right:-12rem;
+    margin-top: 63rem;
+    margin-left: -41rem;
+    margin-bottom: 30rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1450px){
+    .about-head{
+        left:20rem;
+        top:-10rem;
+    }
+    #about-img{
+        left:-2rem;
+        top:-35rem;
+    }
+    .title,.slogan{
+        left:31rem;
+    }
+    .title{
+        margin-left:10rem;
+    }
+    .about-div{
+        left:79rem;
+        width:34rem;
+    }
+    .moto{
+        font-size: 2rem;
+        width:90%;
+    top:-105rem;
+    right:-3rem;
+    margin-top: 68rem;
+    margin-bottom: 0rem;
+    }
+
+}
